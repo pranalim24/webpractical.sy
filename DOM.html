@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Object Manipulation</title>
+        <style>
+        #box{
+	 text-align:center;
+            }
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    </head>
+</html>
+<body>
+    <Div id="box">
+        <h2 id="heading">Welcome Student</h2>
+        <p id="paragraph">This is Document Object Model Manipulation</p>
+        <img id="image" src="https://pennypenningtonweeks.com/wp-content/uploads/2024/02/Welcome-to-Zinnias-Tomatoes-and-Monday-Musings.png"><br><br>
+        <a id="link"href="C:\Users\win\Pictures\Screenshots">link Image</a>
+        <br><br>
+
+        <button onclick="changeContent()">Change Content</button>
+        <button onclick="changeImg()">Change Image</button>
+        <button onclick="changeLink()">Change Link</button>
+        <button onclick="changeClass()">Change Class</button>
+
+    </Div>
+    <script>
+        function changeContent()
+        {
+            document.getElementById("heading").innerHTML ="Hellow Student";
+            document.getElementById("paragraph").innerHTML ="The content has been changed using JavaScript!";
+
+    
+        }
+        function changeImg()
+        {
+            document.getElementById("image").src="https://images.stockcake.com/public/d/f/b/dfbee8ca-4ffc-409d-af9d-de9304e08fc8_large/cherry-blossoms-glisten-stockcake.jpg";
+            
+        }
+        function changeLink()
+        {
+            document.getElementById("link").href = "https://www.google.com";
+            document.getElementById("link").innerHTML = "Visit Google";
+        }
+        function changeClass() 
+        {
+        document.getElementById("box").style.backgroundColor = "lightblue";
+        document.getElementById("box").style.color = "darkblue";
+        }
+    </script>
+</body>
